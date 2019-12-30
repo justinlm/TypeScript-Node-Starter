@@ -23,5 +23,11 @@
   },
   "typescript.referencesCodeLens.enabled": true,
   "appService.zipIgnorePattern": [".vscode{,/**}"],
-  "appService.deploySubpath": ""
+  "appService.deploySubpath": "",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#12322F",
+    "titleBar.activeBackground": "#1A4742",
+    "titleBar.activeForeground": "#F6FCFB"
+  },
+  "search.followSymlinks": false
 }

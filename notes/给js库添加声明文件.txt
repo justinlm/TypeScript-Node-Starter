@@ -1,0 +1,4 @@
+DefinitelyTyped 是 TypeScript 为js库创建的声明文件集合，已经记录了 90% 的顶级 JavaScript 库。
+
+你可以通过 npm 来安装使用 @types，如下例所示，你可以为 jquery 添加声明文件：
+npm install @types/jquery --save-dev

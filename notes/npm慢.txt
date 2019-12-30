@@ -1,0 +1,24 @@
+国内访问外网都很慢，甚至不能访问！大家都懂，都很无奈！
+安装Node时自带的npm地址默认是：http://registry.npmjs.org ，npm install没反应！ 跟着下面操作来解决吧！
+
+方案一：使用cnpm
+安装
+$ npm install cnpm -g
+1
+$ npm install cnpm -g
+如果你在中国，那么你可能需要使用这个源：淘宝 NPM 镜像:
+
+$ npm install cnpm -g --registry=https://registry.npm.taobao.org
+1
+$ npm install cnpm -g --registry=https://registry.npm.taobao.org
+安装模块
+从 registry.npm.taobao.org 安装所有模块. 当安装的时候发现安装的模块还没有同步过来, 淘宝 NPM 会自动在后台进行同步, 并且会让你从官方 NPMregistry.npmjs.org 进行安装. 下次你再安装这个模块的时候, 就会直接从 淘宝 NPM 安装了.
+
+$ cnpm install [name]
+1
+$ cnpm install [name]
+同步（sync）模块
+$ cnpm sync [moduleName]
+1
+$ cnpm sync [moduleName]
+注意：cnpm支持 npm 除了 publish 之外的所有命令，也就是不支持publish，当然这并不影响我们使用，publish时换回npm即可，这样也能解决npm install无响应的问题。
